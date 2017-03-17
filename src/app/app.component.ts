@@ -10,7 +10,7 @@ export class AppComponent {
   spaceScreens: Array<any>;
 
   constructor(private http:Http){
-    this.http.get('./data.json')
+    this.http.get('assets/data.json')
     .map(response => response.json().screenshots)
     .subscribe(res=> this.spaceScreens = res);
   }

@@ -31,6 +31,9 @@
           <button md-button (click)="likeMe(i)">
             <i class="material-icons md-18" [class.red-color]="spaceScreen.liked == '1'">favorite</i> LIKE
           </button>
+           <button md-button (click)="deleteMe(i)">
+            <i class="material-icons md-18">delete</i> DELETE
+          </button>
         </md-card-actions>
     </md-card>
   </md-tab>
